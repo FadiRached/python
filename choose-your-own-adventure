@@ -1,0 +1,29 @@
+# Fadi Rached
+# 9/26/20
+# Extremely simple choose your adventure game 
+
+answer = input("Welcome! Would you like to play a game? (yes/no)\n")
+if answer == "yes":
+    name = input("Great! What is your name?\n")
+    print(f"Hi {name}!")
+    print("You begin by hiking up a mountain.\nYou have learned that at the top of the artic mountain there is a hidden treasure!") 
+    answer = input("Would you like to take the long and safe path or the short but dangourous path? (long/short)\n")
+    if answer == "long":
+        print("Interesting choice, you are not much of a risk taker I see.")
+        answer = input("After years of climbing, you make it!")
+    if answer == "short":
+        print("Risky choice.\nYou come across a large polar bear")
+        answer = input(f"Choose wisely {name}. \nDo you fight the polar bear or do you run away? (fight/run)\n")
+        if answer == "fight":
+            input("Uh oh, you become the Polar Bears lunch. Game Over.\n") 
+        if answer == "run":
+            input("You sprint up the mountain.\nYou win!")
+
+elif answer == "no":
+    print("Aw man! Well see you next time!")
+
+else:
+    print("Please reply with either yes or no")
+
+input()
+    
